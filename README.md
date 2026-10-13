@@ -45,7 +45,7 @@ foxp2/
 
 ```bash
 pip install -r requirements.txt
-huggingface-cli login   # Llama 3.1, Gemma 2 and FLORES+ are gated
+hf auth login   # Llama 3.1, Gemma 2 and FLORES+ are gated
 ```
 
 A single 80 GB GPU is comfortable for the 8–9B models. SAEs are loaded one layer at a time during Stages I–II and only
