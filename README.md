@@ -114,11 +114,3 @@ All prompts are in `foxp2/prompts.py` and `prompts/`:
   "What is the most important point I should remember?"
 - **LLM-judge rubrics** for fluency, adequacy, naturalness and language (Appendix L) and for refusals (Appendix K.3).
 
-## Choices the paper leaves open
-
-- The window objective's weights are α_leak = 1, α_kl = 0.5, α_util = 0.05.
-- Causal lift is measured for the 256 most selective features per layer on 32 D_dev prompts.
-- The eigengap search runs up to rank 16, and the bootstrap keeps the Stage I support fixed.
-- The edit is applied at every token position, prompt and response alike.
-- LoRA adapts the attention projections (q, k, v, o).
-- XSafety prompts are read from a local CSV (`safety.load_xsafety`).
